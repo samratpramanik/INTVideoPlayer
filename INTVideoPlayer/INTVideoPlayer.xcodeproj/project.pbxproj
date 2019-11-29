@@ -12,6 +12,7 @@
 		8C5DE4DF23913EEA0083C705 /* VideoPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5DE4DB23913EEA0083C705 /* VideoPlayer.xib */; };
 		8C5DE4E023913EEA0083C705 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5DE4DC23913EEA0083C705 /* VideoPlayer.swift */; };
 		8C5DE4E123913EEA0083C705 /* FullSecreenVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5DE4DD23913EEA0083C705 /* FullSecreenVideo.swift */; };
+		8C5DE4E3239154E40083C705 /* player_assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C5DE4E2239154E40083C705 /* player_assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8C5DE4DB23913EEA0083C705 /* VideoPlayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayer.xib; sourceTree = "<group>"; };
 		8C5DE4DC23913EEA0083C705 /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		8C5DE4DD23913EEA0083C705 /* FullSecreenVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullSecreenVideo.swift; sourceTree = "<group>"; };
+		8C5DE4E2239154E40083C705 /* player_assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = player_assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				8C5DE4DD23913EEA0083C705 /* FullSecreenVideo.swift */,
 				8C5DE4DC23913EEA0083C705 /* VideoPlayer.swift */,
+				8C5DE4E2239154E40083C705 /* player_assets.xcassets */,
 				8C5DE4DB23913EEA0083C705 /* VideoPlayer.xib */,
 				8C5DE4DA23913EEA0083C705 /* VideoPlayerHelpers.swift */,
 				8C5DE4D223913EC00083C705 /* INTVideoPlayer.h */,
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C5DE4DF23913EEA0083C705 /* VideoPlayer.xib in Resources */,
+				8C5DE4E3239154E40083C705 /* player_assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +291,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = INTVideoPlayer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +318,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = INTVideoPlayer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
