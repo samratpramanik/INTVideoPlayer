@@ -9,11 +9,11 @@ Pod::Spec.new do |spec|
                         DESC
   spec.homepage     = "https://github.com/samratpramanik/INTVideoPlayer"
   spec.license      = "MIT"
-  spec.author             = { "Samrat Pramanik" => "samrat.pramanik@indusnet.co.in" }
+  spec.author       = { "Samrat Pramanik" => "samrat.pramanik@indusnet.co.in" }
   spec.platform     = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/samratpramanik/INTVideoPlayer.git", :tag => 1.0.0 }
+  spec.source       = { :git => "https://github.com/samratpramanik/INTVideoPlayer.git", :tag => "1.0.0" }
   spec.source_files  = "INTVideoPlayer/**/*.{h,m,swift}"
-  spec.resource_bundles = { '{podName}' => ['INTVideoPlayer/**/*.xib', 'INTVideoPlayer/**/*.xcassets'] }
+  
   spec.frameworks = 'AVFoundation', 'AVKit'
   spec.swift_version = '4.2'
 end
