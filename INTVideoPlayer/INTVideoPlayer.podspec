@@ -13,8 +13,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "11.0"
   spec.source       = { :git => "https://github.com/samratpramanik/INTVideoPlayer.git", :tag => "1.0.0" }
   spec.source_files  = "INTVideoPlayer/**/*.{h,m,swift}"
-  spec.resource_bundles = { '{podName}' => ['{podName}/Classes/*.xib'] }
-
-an
-
+  spec.resource_bundles = { '{podName}' => ['INTVideoPlayer/**/*.xib', 'INTVideoPlayer/**/*.xcassets'] }
+  spec.frameworks = 'AVFoundation', 'AVKit'
+  spec.swift_version = '4.0'
 end

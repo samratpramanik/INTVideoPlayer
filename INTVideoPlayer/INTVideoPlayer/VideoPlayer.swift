@@ -48,9 +48,10 @@ open class VideoPlayer: UIView {
     }
     
     //MARK: Private Properties
-    private var playerLayer: AVPlayerLayer?
-    private var player: AVPlayer?
-    private var playerItem: AVPlayerItem?
+    open var playerLayer: AVPlayerLayer?
+    open var player: AVPlayer?
+    open var playerItem: AVPlayerItem?
+    
     private enum Constants {
         static let nibName = "VideoPlayer"
         static let rewindForwardDuration: Float64 = 10 //in seconds
@@ -355,8 +356,8 @@ private extension VideoPlayer {
         self.layoutIfNeeded()
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = self.videoView.bounds
-        playerLayer.videoGravity = .resizeAspect
-        playerLayer.contentsGravity = .resizeAspect
+        playerLayer.videoGravity = AVLayerVideoGravity.resizeAspect
+        playerLayer.contentsGravity = CALayerContentsGravity.resizeAspect
         self.playerLayer = playerLayer
         return playerLayer
     }
@@ -364,7 +365,7 @@ private extension VideoPlayer {
     @objc func playerEndedPlaying(_ notification: Notification) {
         DispatchQueue.main.async {[weak self] in
             if let playerItem = notification.object as? AVPlayerItem {
-                playerItem.seek(to: .zero, completionHandler: nil)
+                playerItem.seek(to: CMTime.zero, completionHandler: nil)
                 self?.playVideo()
             }
         }
