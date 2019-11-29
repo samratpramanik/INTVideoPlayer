@@ -15,5 +15,5 @@ Pod::Spec.new do |spec|
   spec.source_files  = "INTVideoPlayer/**/*.{h,m,swift}"
   spec.resource_bundles = { '{podName}' => ['INTVideoPlayer/**/*.xib', 'INTVideoPlayer/**/*.xcassets'] }
   spec.frameworks = 'AVFoundation', 'AVKit'
-  spec.swift_version = '4.0'
+  spec.swift_version = '4.2'
 end
