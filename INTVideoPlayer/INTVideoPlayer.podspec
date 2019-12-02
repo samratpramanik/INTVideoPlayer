@@ -13,6 +13,7 @@ spec.author       = { "Samrat Pramanik" => "samrat.pramanik@indusnet.co.in" }
 spec.platform     = :ios, "11.0"
 spec.source       = { :git => "https://github.com/samratpramanik/INTVideoPlayer.git", :tag => spec.version }
 spec.source_files  = "INTVideoPlayer/**/*.{h,m,swift}"
+spec.resources = "INTVideoPlayer/**/*.xib"
 spec.resource_bundles = {
 'INTVideoPlayer' => ['INTVideoPlayer/**/*.{xib,xcassets}']
 }
