@@ -14,7 +14,7 @@ spec.platform     = :ios, "11.0"
 spec.source       = { :git => "https://github.com/samratpramanik/INTVideoPlayer.git", :tag => spec.version }
 spec.source_files  = "INTVideoPlayer/**/*.{h,m,swift}"
 spec.resource_bundles = {
-'INTVideoPlayer' => ['INTVideoPlayer/**/*.{xib,xcassets}']
+'INTVideoPlayer' => ['Pod/**/*.{xib,xcassets}']
 }
 spec.frameworks = 'AVFoundation', 'AVKit'
 spec.swift_version = '4.2'
