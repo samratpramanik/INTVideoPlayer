@@ -12,7 +12,7 @@
 		8C5DE4DF23913EEA0083C705 /* VideoPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C5DE4DB23913EEA0083C705 /* VideoPlayer.xib */; };
 		8C5DE4E023913EEA0083C705 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5DE4DC23913EEA0083C705 /* VideoPlayer.swift */; };
 		8C5DE4E123913EEA0083C705 /* FullSecreenVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5DE4DD23913EEA0083C705 /* FullSecreenVideo.swift */; };
-		8C5DE4E3239154E40083C705 /* INTVideoPlayer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C5DE4E2239154E40083C705 /* INTVideoPlayer.xcassets */; };
+		8C6E5DE42395394400CC7139 /* INTVideoPlayer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C5DE4E2239154E40083C705 /* INTVideoPlayer.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,8 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6E5DE42395394400CC7139 /* INTVideoPlayer.xcassets in Resources */,
 				8C5DE4DF23913EEA0083C705 /* VideoPlayer.xib in Resources */,
-				8C5DE4E3239154E40083C705 /* INTVideoPlayer.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
