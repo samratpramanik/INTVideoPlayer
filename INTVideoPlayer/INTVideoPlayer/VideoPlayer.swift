@@ -97,7 +97,7 @@ open class VideoPlayer: UIView {
     //MARK: Public Methods
     open class func initialize(with frame: CGRect, controller: UIViewController) -> VideoPlayer? {
         let bundle = Bundle(for: VideoPlayer.self)
-        let view = bundle.loadNibNamed(Constants.nibName, owner: self, options: nil)?.first as? VideoPlayer
+        let view = bundle.loadNibNamed(Constants.nibName, owner: nil, options: nil)?.first as? VideoPlayer
         view?.frame = frame
         view?.parentController = controller
         return view
